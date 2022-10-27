@@ -3,6 +3,5 @@ public class Main {
     {
         System.out.println("Munir's CW1");
 
-        int num;
     }
 }
