@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Main 
 {
+    public static ArrayList<Song> songslist;
     public static void main(String[] args)
     {
         System.out.println();
@@ -9,18 +10,33 @@ public class Main
         System.out.println();
         System.out.println("Welcome to my Spotify clone!");
         System.out.println();
+
+        createTestSongs();
+        showMenu();
+
+
+
+
+    }
+
+    public static void showMenu()
+    {
         System.out.println("**********************");
         System.out.println("Menu");
         System.out.println("**********************");
         System.out.println();
-        System.out.println("1:Add Song");
+        System.out.println("1:  Add Song");
         System.out.println("2: remove Song");
         System.out.println("3: print all song list");
         System.out.println("4: play Count");
         System.out.println();
 
+        
 
+    }
 
+    public static void createTestSongs()
+    {
         Song midnightrain = new Song(1,"midnightrain","Taylor Swift","127444");
         Song Sorry = new Song (2, "Sorry", " Justin Bieber","341245");
         Song monotonia = new Song (3, "monotonia", "Shakria","35633828");
@@ -44,10 +60,17 @@ public class Main
         songslist.add(Diamonds);
         songslist.add(Pillowtalk);
         songslist.add(Royals);
+    }
+
+    public static void print()
+    {
+        
         for(Song current : songslist)
         {
             current.print();
         }
+
     }
+
 }
 
