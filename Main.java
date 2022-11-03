@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args)
     {
         System.out.println("Munir's CW1");
+<<<<<<< HEAD
         printHeading();
         executeMenuChoice();
 
@@ -21,8 +22,14 @@ public class Main {
             }
         }
 
+=======
+        System.out.println("Well Come");
+        System.out.println("Enter your Name");
+>>>>>>> 4892fa72c594be41c2a02bd304a18cd9394e2f4f
         
+
     }
+<<<<<<< HEAD
     private static int getMenuChoice()
     {
         printTitle("Top 10 Songs App");
@@ -46,3 +53,7 @@ public class Main {
         return choice;
     }
 }
+=======
+    
+}
+>>>>>>> 4892fa72c594be41c2a02bd304a18cd9394e2f4f
