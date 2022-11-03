@@ -1,21 +1,22 @@
 public class Song 
 {
-    private int id;
-    private Song name;
-    public Song (int id, Song name)
+    private int No;
+    private String name;
+
+    public Song (int No, String name)
     {
-        this.id = id;
-        this.name = Song name;
+        this.No = No;
+        this.name = name;
     }
     public void print()
     {
-        System.out.println("id: " + this.id + "Song Name:" + this.name );
+        System.out.println("No: " + this.No + "\tSong Name:" + this.name );
     }
     public int getID()
     {
-        return this.id;
+        return this.No;
     }
-    public string getName()
+    public String getName()
     {
         return this.name;
     }
