@@ -11,6 +11,7 @@ public class Song
         this.name = name;
         this.title = title;
         this.Count = Count;
+        
     }
     public void print()
     {
@@ -28,5 +29,6 @@ public class Song
     {
         return this.Count;
     }
+   
 
 }
