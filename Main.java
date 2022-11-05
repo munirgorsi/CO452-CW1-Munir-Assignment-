@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 
+import org.w3c.dom.css.Counter;
+
 public class Main 
 {
     public static ArrayList<Song> songslist;
     public static void main(String[] args)
-    {
-        
+    {    
         System.out.println();
         System.out.println("Munir's CW1");
         System.out.println();
@@ -86,11 +87,12 @@ public class Main
     }
     public static void getCount()
     {
-        for(Song current : songslist)
+        for(Song getCount : songslist)
         {
-            current.getCount();
+            getCount.print();
         }
     }
+
         
 public static void getName()
 
@@ -98,9 +100,16 @@ public static void getName()
     String songname;
     songname = InputReader.getString("Enter Song title: ");
     songname = InputReader.getString("Enter Artist Name: ");
-    System.out.println(songname + songslist);
-}
-   
+    songname = InputReader.getString("Count Play: ");
+    for(Song current : songslist)
+    {
+        current.print();
+ 
+   }
+    System.out.println(songname);
+
+
+}   
 
     }
    
