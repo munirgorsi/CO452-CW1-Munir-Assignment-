@@ -12,7 +12,7 @@ public class Main
         System.out.println("Welcome to my Spotify clone!");
         System.out.println();
 
-        createTestSongs();
+        MainApp();
         showMenu();
 
 
@@ -37,11 +37,19 @@ public class Main
         {
             print();
         }
+        if(choice == 4)
+        {
+            getCount();
+        }
+        if(choice == 1)
+        {
+            getName();
+        }
 
 
     }
 
-    public static void createTestSongs()
+    public static void MainApp()
     {
         Song midnightrain = new Song(1,"midnightrain","Taylor Swift","127444");
         Song Sorry = new Song (2,"Sorry", " Justin Bieber","341245");
@@ -70,15 +78,28 @@ public class Main
 
     public static void print()
     {
-        
         for(Song current : songslist)
         {
             current.print();
         }
-
+       
     }
-    
-    
+    public static void getCount()
+    {
+        for(Song current : songslist)
+        {
+            current.getCount();
+        }
+    }
+        
+public static void getName()
+
+{
+    String songname;
+    songname = InputReader.getString("Enter Song title: ");
+    songname = InputReader.getString("Enter Artist Name: ");
+    System.out.println(songname + songslist);
+}
    
 
     }
