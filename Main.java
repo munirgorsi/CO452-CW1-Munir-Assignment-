@@ -1,7 +1,5 @@
+
 import java.util.ArrayList;
-
-import org.w3c.dom.css.Counter;
-
 public class Main 
 {
     public static ArrayList<Song> songslist;
@@ -45,6 +43,10 @@ public class Main
         if(choice == 1)
         {
             getName();
+        }
+        if (choice == 2)
+        {
+            getID();
         }
 
 
@@ -92,6 +94,7 @@ public class Main
             getCount.print();
         }
     }
+    
 
         
 public static void getName()
@@ -110,7 +113,17 @@ public static void getName()
 
 
 }   
+public static void getID()
 
-    }
+{
+    String remove;
+    print();
+
+    remove = InputReader.getString("Enter the number of song from list to remove");  
+    System.out.println(remove);
+}
+
+}
+
    
 
